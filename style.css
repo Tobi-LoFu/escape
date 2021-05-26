@@ -1,0 +1,104 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background: linear-gradient(#3f1a6150, #fa8ffa41 ), 
+    url(./img/pexels-donald-tong-143580.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 100%;
+}
+
+h1 {
+   width: 30%;
+   margin: 5% auto;
+   font-size: 5rem;
+   font-weight: 800;
+   color: rgb(230, 230, 230);
+   text-align: center;
+   padding: 1rem;
+   margin-top: 15%;
+   border-bottom: 8px solid #902fff;
+   text-shadow: 2px 2px 15px #902fff;
+}
+
+button,
+.login input {
+   display: block;
+   width: 30%;
+   margin: 5% auto;
+   padding: 0.7rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+   border-radius: 5px;
+   background-color: #b595bb6c;
+}
+
+.login input {
+   border: none;
+   border-bottom: 2px solid #902fff;
+}
+
+/* BUTTON */
+
+button {
+   border: none;
+   border: 3px solid #902fff;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button:hover {
+    background-color: #b595bbaf;
+}
+
+button:hover span::after {
+    content: '\f6d9';
+    font-family: "Font Awesome 5 Free";
+}
+
+button:active {
+    outline: none;
+    border: 3px solid #ff00d4;
+}
+/* END OF BUTTON */
+
+
+input::placeholder, button {
+    color: #ff00d4;
+}
+
+h1::before {
+   content: "\f084 ";
+   font-family: "Font Awesome 5 Free";
+}
+
+input[type="email"] {
+    font-family: "Font Awesome 5 Free";
+}
+
+input:focus {
+   outline: none;
+   color: #ff00d4;
+}
+
+/* WHY DOES THE FOLLOWING NOT WORK??? */
+
+input[type="password"]::placeholder::before {
+    content: "sovfsdv";
+    /* font-family: "Font Awesome 5 Free"; */
+    font-size: 3rem;
+}
